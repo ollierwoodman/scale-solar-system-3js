@@ -23,8 +23,7 @@ const c = 299792.458;
 
 function loadTexture(path) {
   const texture = new THREE.TextureLoader().load(path);
-  texture.flipY = true;
-  
+    
   return texture;
 }
 
@@ -39,7 +38,7 @@ planetTextures[6] = loadTexture('./assets/uranus/textures/Material.002_baseColor
 planetTextures[7] = loadTexture('./assets/neptune/textures/Material.002_diffuse.jpeg'); //neptune
 
 var planets = Array(8);
-planets[0] = ["Mercury",[2.44,40,40],{ color: 0x1a1a1a, map: planetTextures[0] },[0.467*au,0,0],[0,0,0]]; //mercury
+planets[0] = ["Mercury",[2.44,40,40],{ color: 0x1a1a1a, map: planetTextures[0] },[0.467*au,0,0],[0,0,0],]; //mercury
 planets[1] = ["Venus",[6.05,40,40],{ color: 0xe6e6e6, map: planetTextures[1] },[0.728*au,0,0],[0,0,0]]; //venus
 planets[2] = ["Earth",[6.38,40,40],{ color: 0x2f6a69, map: planetTextures[2] },[1*au,0,0],[0,0,0]]; //earth
 planets[3] = ["Mars",[3.39,40,40],{ color: 0x993d00, map: planetTextures[3] },[1.382*au,0,0],[0,0,0]]; //mars
